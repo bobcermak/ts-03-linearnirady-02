@@ -9,15 +9,16 @@ n_pocet = 1
 
 console.log(x_start)
 
-while (n_pocet <= 168) {
-
-  if(x_start) {
-    c_nextNumber = x_start += 4
-    n_pocet += 1
-
-    if(c_nextNumber % 5 === 0 && c_nextNumber % 3 === 0) {
-      continue
-    }
-    console.log(c_nextNumber)
+while (c_nextNumber <= 168) {
+  c_nextNumber = x_start += 4
+  n_pocet += 1
+  if(c_nextNumber % 5 === 0 && c_nextNumber % 3 === 0) {
+    continue
   }
+  if(c_nextNumber === 170){
+    continue
+  }
+  console.log(c_nextNumber)
+
 }
+
